@@ -24,9 +24,9 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly efficient and reliable, in addition to restricting unwanted access to the network.
 - The load balancers reduce the possibility of a network being overwhelmed by incoming traffic. This can help to protect the network from Distributed denial of service (DDOS) attacks. Using a Jump Box makes the VMs less vulnerable to attack because the VMs are only accessed through the Jump Box via ssh. The VMs are set to prevent access using an external IP address. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system database.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system files.
+- Filebeat monitors the log files or locations according to settings then collects logs and send them to Elasticsearch or Logstash for further data analysis.
+- Metricbeat collects metrics from the operating system and services running on a server. 
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -94,4 +94,5 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
 
