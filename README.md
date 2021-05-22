@@ -28,15 +28,14 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Filebeat monitors the log files or locations according to settings then collects logs and send them to Elasticsearch or Logstash for further data analysis.
 - Metricbeat collects metrics from the operating system and services running on a server. 
 
-The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name     | Function           | IP Address    | Operating System |
+|----------|--------------------|---------------|------------------|
+| Jump Box | Gateway            | 40.121.64.159 | Linux/Ubuntu     |
+| Web-1    | Webserver          | 10.0.0.5      | Linux/Ubuntu     |
+| Web-2    | Webserver          | 10.0.0.6      | Linux/Ubuntu     |
+| Web-3    | Webserver          | 10.0.0.7      | Linux/Ubuntu     |
+| ELK-VM   | Logging/Monitoring | 10.1.0.4      | Linux/Ubuntu     |
 
 ### Access Policies
 
