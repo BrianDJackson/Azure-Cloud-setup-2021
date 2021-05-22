@@ -64,13 +64,16 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because allows for building infrastructure quickly.  
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+-	Install Docker
+-	Install Python3-pip
+-	Download and launch the DVWA web container
+-	Enable Docker service upon every reboot
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-https://github.com/BrianDJackson/IT-Security-Class-2021/blob/main/Docker%20running%20Elk%20Screenshot.PNG)
+ 
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -96,5 +99,6 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
 
 
