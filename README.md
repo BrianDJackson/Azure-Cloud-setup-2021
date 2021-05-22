@@ -4,12 +4,12 @@ The files in this repository were used to configure the network depicted below.
 
 https://github.com/BrianDJackson/IT-Security-Class-2021/blob/main/AzureCloudDiagram.png
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible Playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  https://github.com/BrianDJackson/IT-Security-Class-2021/blob/main/filebeat-playbook.yml
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -21,10 +21,10 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly efficient and reliable, in addition to restricting unwanted access to the network.
+- The load balancers reduce the possibility of a network being overwhelmed by incoming traffic. This can help to protect the network from Distributed denial of service (DDOS) attacks. Using a Jump Box makes the VMs less vulnerable to attack because the VMs are only accessed through the Jump Box via ssh. The VMs are set to prevent access using an external IP address. 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system database.
 - _TODO: What does Filebeat watch for?_
 - _TODO: What does Metricbeat record?_
 
@@ -94,3 +94,4 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
