@@ -72,7 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![](images/Docker running Elk Screenshot.PNG)
+<img width="422" alt="Docker running Elk Screenshot" src="https://user-images.githubusercontent.com/77516651/119247219-ce23d080-bb55-11eb-85f8-f3e99a394583.PNG">
 
 
 
