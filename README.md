@@ -95,13 +95,14 @@ Using these tools we would hope to monitor logs and services running on the serv
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the playbook.yml file to etc/ansible/roles.
-- Update the /etc/ansible/ansible.cfg file to include the remote user name being used for all virtual machines on the network.
-- Run the playbook, and navigate to the web browse. Input http://[your.VM.IP]:5601/app/kibana to insure Kibana is functioning properly.  
+- From the Jump Box connect to the Ansible container within the Jump Box.
+- Create a YAML playbook file then update the /etc/ansible/ansible.cfg file to include the remote user name being used for all virtual machines on the network.
+- Run the YAML playbook and make corrections if any errors occur while running the playbook. 
+- After successfully running the playbook, SSH into your new Ansible container to ensure that it functions.  
 
-_TODO: Answer the following questions to fill in the blanks:_
-- 
 
-_Which file is the playbook? Where do you copy it?_
+The Playbooks are the YAML files that end with the extension .yml.
+
+? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - Input http://[your.VM.IP]:5601/app/kibana to insure Kibana is functioning properly.  
