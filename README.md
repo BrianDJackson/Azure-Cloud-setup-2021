@@ -102,7 +102,11 @@ SSH into the control node and follow the steps below:
 
 
 The Playbooks are the YAML files that end with the extension .yml.
+Playbooks can be copied from this file: https://github.com/BrianDJackson/IT-Security-Class-2021/tree/main/Ansible/Ansible
 
-? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- Input http://[your.VM.IP]:5601/app/kibana to insure Kibana is functioning properly.  
+- The /etc/ansible/hosts file needs to be updated to make Ansible run the playbook on a specific machines. Those machines IP addresses need to be added to the hosts file. 
+
+ - Make sure that your ELK server is installed on a machine that does not contain a webserver. Filebeat needs to be installed on all machines with webservers because Filebeat is going to send logs from your webservers to be analyzed using the ELK server. Your network should be constructed in this manner so the ELK machine can monitor on an independent server. 
+
+The final step is to test then use Kibana to monitor network traffic.
+- Input http://[your.VM.IP]:5601/app/kibana to access your ELK Stack. 
