@@ -16,6 +16,9 @@ This document contains the following details:
   - Machines Being Monitored
 - How to Use the Ansible Build
 
+### Cloud Network Topology
+
+<img width="717" alt="Azure Cloud Diagram" src="https://user-images.githubusercontent.com/77516651/119247420-4048e500-bb57-11eb-91a2-b85b3cc2e81b.PNG">
 
 ### Description of the Topology
 
